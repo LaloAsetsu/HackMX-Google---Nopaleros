@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Detector de Sitios Fraudulentos xd",
+    "version": "2.0",
+    "description": "Detecta sitios fraudulentos con técnicas de IA.",
+    "permissions": ["scripting", "activeTab"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+        {
+        "resources": ["popup.html"],
+        "matches": ["<all_urls>"]
+        }
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

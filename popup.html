@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Advertencia de Fraude</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="fraud-warning">
+    <div class="warning-content">
+      <img src="icon.png" alt="Advertencia">
+      <p>¡Este sitio podría ser fraudulento!</p>
+      <button id="exit-button">Salir</button>
+    </div>
+  </div>
+
+  <!-- Chatbot Container -->
+  <div id="chatbot-container" class="chatbot-hidden">
+    <div class="chatbot-header">
+      <h3>Asistente Virtual</h3>
+      <button id="close-chatbot">X</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta aquí...">
+      <button id="send-message">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Botón para abrir el chatbot -->
+  <button id="open-chatbot" class="chatbot-button">¿Necesitas ayuda?</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

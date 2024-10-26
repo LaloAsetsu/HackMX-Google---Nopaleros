@@ -1,0 +1,198 @@
+/* Estilos para la advertencia de fraude */
+#fraud-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .warning-content {
+    text-align: center;
+  }
+  
+  .warning-content img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .warning-content p {
+    font-size: 1.5em;
+  }
+  
+  #exit-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #d32f2f;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Efecto de hover para el botón de salida */
+  #exit-button:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Estilos para el contenedor del chatbot */
+  #chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%);
+  }
+  
+  /* Mostrar el chatbot cuando no está oculto */
+  #chatbot-container.show {
+    transform: translateY(0);
+  }
+  
+  /* Estilo del encabezado del chatbot */
+  .chatbot-header {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilo del botón para cerrar el chatbot */
+  #close-chatbot {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+/* Estilos para el contenedor del chatbot */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(100%); /* Comienza oculto */
+  }
+  
+  /* Mostrar el chatbot cuando no está oculto */
+  #chatbot-container.show {
+    transform: translateY(0); /* Muestra el chatbot */
+  }
+  
+  /* Otros estilos del chatbot */
+  .chatbot-header {
+    background-color: #6200ea;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #close-chatbot {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .chatbot-messages {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chatbot-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  
+  #chatbot-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom-left-radius: 10px;
+  }
+  
+  #send-message {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #open-chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+  }
+  
+  /* Estilos para los mensajes */
+  .message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+  }
+  
+  .message.user {
+    background-color: #d1c4e9;
+    align-self: flex-end;
+    color: #333;
+  }
+  
+  .message.bot {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+    color: #333;
+  }
+  
+  #send-message:hover,
+  #open-chatbot:hover {
+    background-color: #7e57c2;
+  }
+  
+  #chatbot-container,
+  #open-chatbot {
+    transition: all 0.3s ease;
+  }
+  
